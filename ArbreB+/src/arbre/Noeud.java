@@ -17,9 +17,6 @@ public class Noeud <E> {
 		
 	public Noeud(ArrayList<E> ensbValeurs) {
 		//
-		//
-		//
-		//
 		this.iD = UUID.randomUUID();
 		this.ensbValeurs = ensbValeurs;
 		this.ensbPointeurs = null;
@@ -30,8 +27,5 @@ public class Noeud <E> {
 		this.isRacine = isRacine;
 		this.isFeuille = isFeuille;
 		this.isIntermediaire = isIntermediaire;
-	}
-	
-	
-	
+	}	
 }

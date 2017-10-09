@@ -16,11 +16,10 @@ public class Noeud <E> {
 	public boolean isIntermediaire;
 		
 	public Noeud(ArrayList<E> ensbValeurs) {
-		//
 		this.iD = UUID.randomUUID();
 		this.ensbValeurs = ensbValeurs;
 		this.ensbPointeurs = null;
-		this.niveau = niveau;
+		this.niveau = determinationNiveau();
 		this.parent = parent;
 		this.voisin = voisin;
 		this.remplissage = remplissage;
@@ -28,4 +27,6 @@ public class Noeud <E> {
 		this.isFeuille = isFeuille;
 		this.isIntermediaire = isIntermediaire;
 	}	
+	
+	public int determinationNiveau() {}
 }

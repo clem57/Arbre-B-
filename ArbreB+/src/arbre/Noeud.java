@@ -16,7 +16,6 @@ public class Noeud <E> {
 	public boolean isIntermediaire;
 		
 	public Noeud(ArrayList<E> ensbValeurs) {
-		//
 		this.iD = UUID.randomUUID();
 		this.ensbValeurs = ensbValeurs;
 		this.ensbPointeurs = null;

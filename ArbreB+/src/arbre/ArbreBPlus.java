@@ -13,8 +13,8 @@ public class ArbreBPlus<E> {
 		if (noeud.isFeuille) {
 			return noeud;			
 		}
-		if (element<noeud.ensbPointeurs[0] {
-			return chercherRecursif(, element);
+		if (element<noeud.ensbValeurs[0]) {
+			return chercherRecursif(noeud.ensbPointeurs[0], element);
 		}
 		if(noeud.getRacine().compareTo(element)>0) {				//si la racine est plus grande que l'elt, on cherche sur le fils gauche
 			return chercher(noeud.getfG(), element);

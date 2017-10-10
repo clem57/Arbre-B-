@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Noeud<E> {
-	public UUID iD;
+	//public UUID iD;
 	public ArrayList<E> ensbValeurs;
-	public ArrayList<UUID> ensbPointeurs;
+	public ArrayList<Noeud<E>> ensbPointeurs;
 	public Noeud<E> parent;
 	public int niveau;
-	public ArrayList<UUID> voisin;
+	public ArrayList<Noeud<E>> voisin;
 	public float remplissage;
 	public boolean isRacine;
 	public boolean isFeuille;
 	public boolean isIntermediaire;
 		
 	public Noeud(ArrayList<E> ensbValeurs, boolean isRacine, boolean isFeuille, boolean isIntermediaire) {
-		this.iD = UUID.randomUUID();
+		//this.iD = UUID.randomUUID();
 		this.ensbValeurs = ensbValeurs;
 		this.ensbPointeurs = null;
 		this.parent = determinationParent();
@@ -42,7 +42,7 @@ public class Noeud<E> {
 		}
 	}	
 	
-	public ArrayList<UUID> determinationVoisins(){}
+	public ArrayList<Noeud<E>> determinationVoisins(){}
 	
 	public float determinationRemplissage() {}
 	
